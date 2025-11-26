@@ -1,0 +1,19 @@
+{
+  "@@locale": "hi",
+  "appTitle": "ऐप टेम्पलेट",
+  "settings": "सेटिंग्स",
+  "privacyPolicy": "गोपनीयता नीति",
+  "termsOfService": "सेवा की शर्तें",
+  "language": "भाषा",
+  "subscription": "सदस्यता",
+  "restorePurchases": "खरीदारी पुनर्स्थापित करें",
+  "ok": "ठीक है",
+  "cancel": "रद्द करें",
+  "maintenance": "रखरखाव के तहत",
+  "maintenanceMessage": "ऐप वर्तमान में रखरखाव के तहत है। कृपया बाद में पुनः प्रयास करें।",
+  "updateRequired": "अपडेट आवश्यक",
+  "updateRequiredMessage": "ऐप का उपयोग जारी रखने के लिए कृपया नवीनतम संस्करण में अपडेट करें।",
+  "updateRecommended": "अपडेट की सिफारिश",
+  "updateRecommendedMessage": "एक नया संस्करण उपलब्ध है। हम सर्वोत्तम अनुभव के लिए अपडेट करने की सलाह देते हैं।",
+  "update": "अपडेट करें"
+}

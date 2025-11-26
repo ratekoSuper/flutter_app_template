@@ -1,68 +1,90 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter_app_template/core/di/providers.dart';
+import 'package:flutter_app_template/core/constants/app_colors.dart';
+import 'package:flutter_app_template/presentation/pages/settings/settings_page.dart';
+import 'l10n/app_localizations.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
-void main() {
-  runApp(const MyApp());
+// Firebaseの有効化/無効化（true=有効, false=無効）
+const bool enableFirebase = false;
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  if (enableFirebase) {
+    await Firebase.initializeApp();
+  }
+
+  runApp(const ProviderScope(child: MyApp()));
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends ConsumerStatefulWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-      ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
-    );
+  ConsumerState<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends ConsumerState<MyApp> {
+  @override
+  void initState() {
+    super.initState();
+    _initializeServices();
   }
-}
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
+  Future<void> _initializeServices() async {
+    if (!enableFirebase) {
+      return;
+    }
 
-  final String title;
+    final appCheckService = ref.read(firebaseAppCheckServiceProvider);
+    await appCheckService.activate();
 
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
+    final remoteConfigService = ref.read(remoteConfigServiceProvider);
+    await remoteConfigService.initialize();
 
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+    final analyticsService = ref.read(firebaseAnalyticsServiceProvider);
+    await analyticsService.logAppOpen();
 
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
+    final subscriptionRepository = ref.read(subscriptionRepositoryProvider);
+    await subscriptionRepository.initialize();
   }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text(widget.title),
-      ),
-      body: Center(
-        child: Column(
-          //
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text('You have pushed the button this many times:'),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
-          ],
+    return CupertinoApp(
+      title: 'Flutter App Template',
+      localizationsDelegates: const [
+        AppLocalizations.delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      supportedLocales: const [
+        Locale('en', ''),
+        Locale('ja', ''),
+        Locale('ar', ''),
+        Locale('it', ''),
+        Locale('id', ''),
+        Locale('es', ''),
+        Locale('de', ''),
+        Locale('hi', ''),
+        Locale('fr', ''),
+        Locale('pt', ''),
+        Locale('ru', ''),
+        Locale('ko', ''),
+      ],
+      theme: CupertinoThemeData(
+        primaryColor: AppColors.primary,
+        scaffoldBackgroundColor: AppColors.backgroundLight,
+        barBackgroundColor: AppColors.backgroundLight,
+        textTheme: const CupertinoTextThemeData(
+          primaryColor: AppColors.textPrimary,
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ),
+      home: const SettingsPage(),
     );
   }
 }

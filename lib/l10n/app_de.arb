@@ -1,0 +1,19 @@
+{
+  "@@locale": "de",
+  "appTitle": "App-Vorlage",
+  "settings": "Einstellungen",
+  "privacyPolicy": "Datenschutzrichtlinie",
+  "termsOfService": "Nutzungsbedingungen",
+  "language": "Sprache",
+  "subscription": "Abonnement",
+  "restorePurchases": "Käufe Wiederherstellen",
+  "ok": "OK",
+  "cancel": "Abbrechen",
+  "maintenance": "Wartung",
+  "maintenanceMessage": "Die App befindet sich derzeit in Wartung. Bitte versuchen Sie es später erneut.",
+  "updateRequired": "Aktualisierung Erforderlich",
+  "updateRequiredMessage": "Bitte aktualisieren Sie auf die neueste Version, um die App weiterhin zu nutzen.",
+  "updateRecommended": "Aktualisierung Empfohlen",
+  "updateRecommendedMessage": "Eine neue Version ist verfügbar. Wir empfehlen eine Aktualisierung für die beste Erfahrung.",
+  "update": "Aktualisieren"
+}

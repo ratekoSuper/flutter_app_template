@@ -1,0 +1,19 @@
+{
+  "@@locale": "ar",
+  "appTitle": "قالب التطبيق",
+  "settings": "الإعدادات",
+  "privacyPolicy": "سياسة الخصوصية",
+  "termsOfService": "شروط الخدمة",
+  "language": "اللغة",
+  "subscription": "الاشتراك",
+  "restorePurchases": "استعادة المشتريات",
+  "ok": "موافق",
+  "cancel": "إلغاء",
+  "maintenance": "قيد الصيانة",
+  "maintenanceMessage": "التطبيق قيد الصيانة حاليًا. يرجى المحاولة مرة أخرى لاحقًا.",
+  "updateRequired": "التحديث مطلوب",
+  "updateRequiredMessage": "يرجى التحديث إلى أحدث إصدار لمواصلة استخدام التطبيق.",
+  "updateRecommended": "يوصى بالتحديث",
+  "updateRecommendedMessage": "يتوفر إصدار جديد. نوصي بالتحديث للحصول على أفضل تجربة.",
+  "update": "تحديث"
+}

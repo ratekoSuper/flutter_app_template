@@ -1,0 +1,19 @@
+{
+  "@@locale": "id",
+  "appTitle": "Template Aplikasi",
+  "settings": "Pengaturan",
+  "privacyPolicy": "Kebijakan Privasi",
+  "termsOfService": "Ketentuan Layanan",
+  "language": "Bahasa",
+  "subscription": "Berlangganan",
+  "restorePurchases": "Pulihkan Pembelian",
+  "ok": "OK",
+  "cancel": "Batal",
+  "maintenance": "Dalam Pemeliharaan",
+  "maintenanceMessage": "Aplikasi sedang dalam pemeliharaan. Silakan coba lagi nanti.",
+  "updateRequired": "Pembaruan Diperlukan",
+  "updateRequiredMessage": "Harap perbarui ke versi terbaru untuk terus menggunakan aplikasi.",
+  "updateRecommended": "Pembaruan Disarankan",
+  "updateRecommendedMessage": "Versi baru tersedia. Kami merekomendasikan pembaruan untuk pengalaman terbaik.",
+  "update": "Perbarui"
+}
