@@ -1,0 +1,41 @@
+name: flutter_app_template
+description: Flutterアプリ開発のためのテンプレート（オニオンアーキテクチャ、Riverpod、Firebase、多言語対応）
+version: 1.0.0+1
+
+vars:
+  project_name:
+    type: string
+    description: プロジェクト名（スネークケース、例：my_app）
+    prompt: What is your project name?
+    default: my_app
+  
+  app_name:
+    type: string
+    description: アプリ名（表示名、例：My App）
+    prompt: What is your app name?
+    default: My App
+  
+  package_name:
+    type: string
+    description: パッケージ名（ドット区切り、例：com.company.myapp）
+    prompt: What is your package name?
+    default: com.example.myapp
+  
+  description:
+    type: string
+    description: プロジェクトの説明
+    prompt: What is your project description?
+    default: A new Flutter project.
+  
+  version:
+    type: string
+    description: 初期バージョン
+    prompt: What is the initial version?
+    default: 1.0.0+1
+  
+  enable_firebase:
+    type: boolean
+    description: Firebaseを有効化しますか？（開発中はfalse推奨）
+    prompt: Enable Firebase?
+    default: false
+

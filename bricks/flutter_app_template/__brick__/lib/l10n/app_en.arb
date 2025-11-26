@@ -1,0 +1,68 @@
+{
+  "@@locale": "en",
+  "appTitle": "App Template",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "settings": "Settings",
+  "@settings": {
+    "description": "Settings screen title"
+  },
+  "privacyPolicy": "Privacy Policy",
+  "@privacyPolicy": {
+    "description": "Privacy policy screen title"
+  },
+  "termsOfService": "Terms of Service",
+  "@termsOfService": {
+    "description": "Terms of service screen title"
+  },
+  "language": "Language",
+  "@language": {
+    "description": "Language setting label"
+  },
+  "subscription": "Subscription",
+  "@subscription": {
+    "description": "Subscription screen title"
+  },
+  "restorePurchases": "Restore Purchases",
+  "@restorePurchases": {
+    "description": "Restore purchases button label"
+  },
+  "ok": "OK",
+  "@ok": {
+    "description": "OK button label"
+  },
+  "cancel": "Cancel",
+  "@cancel": {
+    "description": "Cancel button label"
+  },
+  "maintenance": "Under Maintenance",
+  "@maintenance": {
+    "description": "Maintenance mode message title"
+  },
+  "maintenanceMessage": "The app is currently under maintenance. Please try again later.",
+  "@maintenanceMessage": {
+    "description": "Maintenance mode message body"
+  },
+  "updateRequired": "Update Required",
+  "@updateRequired": {
+    "description": "Update required dialog title"
+  },
+  "updateRequiredMessage": "Please update to the latest version to continue using the app.",
+  "@updateRequiredMessage": {
+    "description": "Update required dialog message"
+  },
+  "updateRecommended": "Update Recommended",
+  "@updateRecommended": {
+    "description": "Update recommended dialog title"
+  },
+  "updateRecommendedMessage": "A new version is available. We recommend updating for the best experience.",
+  "@updateRecommendedMessage": {
+    "description": "Update recommended dialog message"
+  },
+  "update": "Update",
+  "@update": {
+    "description": "Update button label"
+  }
+}
+

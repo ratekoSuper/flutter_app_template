@@ -1,0 +1,20 @@
+{
+  "@@locale": "it",
+  "appTitle": "Modello App",
+  "settings": "Impostazioni",
+  "privacyPolicy": "Informativa sulla Privacy",
+  "termsOfService": "Termini di Servizio",
+  "language": "Lingua",
+  "subscription": "Abbonamento",
+  "restorePurchases": "Ripristina Acquisti",
+  "ok": "OK",
+  "cancel": "Annulla",
+  "maintenance": "In Manutenzione",
+  "maintenanceMessage": "L'app è attualmente in manutenzione. Riprova più tardi.",
+  "updateRequired": "Aggiornamento Richiesto",
+  "updateRequiredMessage": "Aggiorna all'ultima versione per continuare a utilizzare l'app.",
+  "updateRecommended": "Aggiornamento Consigliato",
+  "updateRecommendedMessage": "È disponibile una nuova versione. Consigliamo di aggiornare per la migliore esperienza.",
+  "update": "Aggiorna"
+}
+

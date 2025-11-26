@@ -1,0 +1,20 @@
+{
+  "@@locale": "ja",
+  "appTitle": "アプリテンプレート",
+  "settings": "設定",
+  "privacyPolicy": "プライバシーポリシー",
+  "termsOfService": "利用規約",
+  "language": "言語",
+  "subscription": "サブスクリプション",
+  "restorePurchases": "購入を復元",
+  "ok": "OK",
+  "cancel": "キャンセル",
+  "maintenance": "メンテナンス中",
+  "maintenanceMessage": "現在メンテナンス中です。しばらくしてからもう一度お試しください。",
+  "updateRequired": "アップデートが必要です",
+  "updateRequiredMessage": "アプリを引き続き使用するには、最新バージョンにアップデートしてください。",
+  "updateRecommended": "アップデートをおすすめします",
+  "updateRecommendedMessage": "新しいバージョンが利用可能です。最高のエクスペリエンスのためにアップデートすることをおすすめします。",
+  "update": "アップデート"
+}
+

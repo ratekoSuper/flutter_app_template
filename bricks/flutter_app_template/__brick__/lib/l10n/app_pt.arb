@@ -1,0 +1,20 @@
+{
+  "@@locale": "pt",
+  "appTitle": "Modelo de Aplicativo",
+  "settings": "Configurações",
+  "privacyPolicy": "Política de Privacidade",
+  "termsOfService": "Termos de Serviço",
+  "language": "Idioma",
+  "subscription": "Assinatura",
+  "restorePurchases": "Restaurar Compras",
+  "ok": "OK",
+  "cancel": "Cancelar",
+  "maintenance": "Em Manutenção",
+  "maintenanceMessage": "O aplicativo está atualmente em manutenção. Por favor, tente novamente mais tarde.",
+  "updateRequired": "Atualização Necessária",
+  "updateRequiredMessage": "Por favor, atualize para a versão mais recente para continuar usando o aplicativo.",
+  "updateRecommended": "Atualização Recomendada",
+  "updateRecommendedMessage": "Uma nova versão está disponível. Recomendamos atualizar para a melhor experiência.",
+  "update": "Atualizar"
+}
+

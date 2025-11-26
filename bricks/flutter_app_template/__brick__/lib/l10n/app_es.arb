@@ -1,0 +1,20 @@
+{
+  "@@locale": "es",
+  "appTitle": "Plantilla de Aplicación",
+  "settings": "Configuración",
+  "privacyPolicy": "Política de Privacidad",
+  "termsOfService": "Términos de Servicio",
+  "language": "Idioma",
+  "subscription": "Suscripción",
+  "restorePurchases": "Restaurar Compras",
+  "ok": "OK",
+  "cancel": "Cancelar",
+  "maintenance": "En Mantenimiento",
+  "maintenanceMessage": "La aplicación está actualmente en mantenimiento. Por favor, inténtelo de nuevo más tarde.",
+  "updateRequired": "Actualización Requerida",
+  "updateRequiredMessage": "Por favor, actualice a la última versión para continuar usando la aplicación.",
+  "updateRecommended": "Actualización Recomendada",
+  "updateRecommendedMessage": "Una nueva versión está disponible. Recomendamos actualizar para la mejor experiencia.",
+  "update": "Actualizar"
+}
+

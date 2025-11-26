@@ -1,0 +1,20 @@
+{
+  "@@locale": "fr",
+  "appTitle": "Modèle d'Application",
+  "settings": "Paramètres",
+  "privacyPolicy": "Politique de Confidentialité",
+  "termsOfService": "Conditions d'Utilisation",
+  "language": "Langue",
+  "subscription": "Abonnement",
+  "restorePurchases": "Restaurer les Achats",
+  "ok": "OK",
+  "cancel": "Annuler",
+  "maintenance": "En Maintenance",
+  "maintenanceMessage": "L'application est actuellement en maintenance. Veuillez réessayer plus tard.",
+  "updateRequired": "Mise à Jour Requise",
+  "updateRequiredMessage": "Veuillez mettre à jour vers la dernière version pour continuer à utiliser l'application.",
+  "updateRecommended": "Mise à Jour Recommandée",
+  "updateRecommendedMessage": "Une nouvelle version est disponible. Nous recommandons de mettre à jour pour une meilleure expérience.",
+  "update": "Mettre à Jour"
+}
+
