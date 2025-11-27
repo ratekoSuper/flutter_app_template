@@ -1,5 +1,4 @@
 import 'dart:async';
-import 'dart:io';
 import 'package:{{project_name}}/domain/entities/subscription_product.dart';
 import 'package:{{project_name}}/domain/repositories/subscription_repository.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';

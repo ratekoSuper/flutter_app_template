@@ -4,7 +4,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:{{project_name}}/core/di/providers.dart';
 import 'package:{{project_name}}/core/constants/app_colors.dart';
 import 'package:{{project_name}}/presentation/pages/settings/settings_page.dart';
-import 'l10n/app_localizations.dart';
+import 'package:{{project_name}}/l10n/app_localizations.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
 // Firebaseの有効化/無効化（true=有効, false=無効）

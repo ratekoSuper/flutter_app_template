@@ -2,6 +2,37 @@
 
 Flutterアプリ開発のための再利用可能なMasonブリックです。
 
+## ⚠️ 重要な注意事項
+
+このブリックは、**既存のFlutterプロジェクトに追加するのではなく、完全なプロジェクトを生成します**。
+
+ただし、iOSのXcodeプロジェクトファイル（`project.pbxproj`）など、一部の複雑なファイルは含まれていません。生成後、以下の手順を実行してください：
+
+### 生成後の必須手順
+
+1. **Flutterプロジェクトとして初期化**
+   ```bash
+   cd <project_name>
+   flutter create --platforms=ios,android .
+   ```
+
+   これにより、不足しているiOS/Androidの設定ファイルが自動生成されます。
+
+2. **依存関係をインストール**
+   ```bash
+   flutter pub get
+   ```
+
+3. **多言語対応ファイルを生成**
+   ```bash
+   flutter gen-l10n
+   ```
+
+4. **アプリを実行**
+   ```bash
+   flutter run
+   ```
+
 ## 機能
 
 - ✅ オニオンアーキテクチャ
@@ -14,28 +45,31 @@ Flutterアプリ開発のための再利用可能なMasonブリックです。
 
 ## インストール
 
-### ローカルブリックとして使用
-
-1. このリポジトリをクローンまたはダウンロード
-2. プロジェクトのルートに`mason.yaml`を作成：
-
-```yaml
-bricks:
-  flutter_app_template:
-    path: ./bricks/flutter_app_template
-```
-
-3. ブリックを取得：
+### Gitリポジトリからインストール（推奨）
 
 ```bash
-mason get
+# 公開リポジトリから
+mason add -g flutter_app_template \
+  --git-url https://github.com/your-username/flutter_app_template.git \
+  --git-path bricks/flutter_app_template
+
+# 特定のバージョンを使用する場合
+mason add -g flutter_app_template \
+  --git-url https://github.com/your-username/flutter_app_template.git \
+  --git-path bricks/flutter_app_template \
+  --git-ref v1.0.0
 ```
 
-### グローバルブリックとして使用
+### ローカルパスからインストール
 
 ```bash
-mason add -g flutter_app_template --path ./bricks/flutter_app_template
+# ローカルパスから
+mason add -g flutter_app_template --path <path_to_brick>
 ```
+
+### 共有方法について
+
+詳細な共有手順は [SHARING.md](SHARING.md) を参照してください。
 
 ## 使用方法
 
@@ -55,54 +89,24 @@ mason make flutter_app_template
 - **version**: 初期バージョン（デフォルト：`1.0.0+1`）
 - **enable_firebase**: Firebase有効化（デフォルト：`false`）
 
-### 設定ファイルを使用（非対話式）
-
-`config.json`を作成：
-
-```json
-{
-  "project_name": "my_app",
-  "app_name": "My App",
-  "package_name": "com.company.myapp",
-  "description": "A new Flutter project",
-  "version": "1.0.0+1",
-  "enable_firebase": false
-}
-```
-
-設定ファイルを使用して生成：
+### 生成後の完全な手順
 
 ```bash
-mason make flutter_app_template --config-path config.json
+# 1. 生成されたプロジェクトディレクトリに移動
+cd <project_name>
+
+# 2. Flutterプロジェクトとして初期化（重要！）
+flutter create --platforms=ios,android .
+
+# 3. 依存関係をインストール
+flutter pub get
+
+# 4. 多言語対応ファイルを生成
+flutter gen-l10n
+
+# 5. アプリを実行
+flutter run
 ```
-
-### 出力ディレクトリを指定
-
-```bash
-mason make flutter_app_template --output-dir ./my_new_project
-```
-
-## 生成後の手順
-
-1. **プロジェクトディレクトリに移動**
-   ```bash
-   cd <project_name>
-   ```
-
-2. **依存関係をインストール**
-   ```bash
-   flutter pub get
-   ```
-
-3. **多言語対応ファイルを生成**
-   ```bash
-   flutter gen-l10n
-   ```
-
-4. **アプリを実行**
-   ```bash
-   flutter run
-   ```
 
 ## 生成されるファイル構造
 
@@ -110,22 +114,17 @@ mason make flutter_app_template --output-dir ./my_new_project
 <project_name>/
 ├── lib/
 │   ├── core/              # 共通機能
-│   │   ├── di/           # 依存性注入
-│   │   ├── services/     # 共通サービス
-│   │   └── constants/    # 定数定義
 │   ├── domain/           # ドメイン層
-│   │   ├── entities/     # エンティティ
-│   │   └── repositories/ # リポジトリインターフェース
 │   ├── data/             # データ層
-│   │   └── repositories/ # リポジトリ実装
 │   ├── presentation/      # プレゼンテーション層
-│   │   └── pages/        # 画面
 │   ├── l10n/             # 多言語対応ファイル（12言語）
 │   └── main.dart         # エントリーポイント
 ├── android/              # Android設定
-├── ios/                  # iOS設定
+├── ios/                  # iOS設定（一部のみ）
+├── test/                 # テストファイル
 ├── pubspec.yaml          # 依存関係
-└── l10n.yaml            # 多言語設定
+├── l10n.yaml            # 多言語設定
+└── .gitignore           # Git除外設定
 ```
 
 ## サポート言語
@@ -163,24 +162,14 @@ Firebaseを使用する場合：
 
 ## トラブルシューティング
 
-### ブリックが見つからない
+### iOSビルドエラー
 
-```bash
-# ブリックを再取得
-mason get
-```
+`flutter create --platforms=ios,android .`を実行して、不足しているファイルを生成してください。
 
-### ファイルの競合
+### Androidビルドエラー
 
-```bash
-# 上書きする場合
-mason make flutter_app_template --on-conflict overwrite
-
-# スキップする場合
-mason make flutter_app_template --on-conflict skip
-```
+`flutter create --platforms=android .`を実行して、不足しているファイルを生成してください。
 
 ## ライセンス
 
 このテンプレートは自由に使用・改変できます。
-

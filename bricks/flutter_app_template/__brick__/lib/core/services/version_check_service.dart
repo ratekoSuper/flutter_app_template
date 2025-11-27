@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:{{project_name}}/core/services/remote_config_service.dart';
 
 enum VersionStatus {

@@ -1,5 +1,4 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
 import 'package:flutter_app_template/core/constants/app_constants.dart';
 import 'package:flutter_app_template/presentation/pages/settings/privacy_policy_page.dart';
 import 'package:flutter_app_template/presentation/pages/settings/terms_of_service_page.dart';

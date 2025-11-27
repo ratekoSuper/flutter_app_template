@@ -39,3 +39,4 @@ vars:
     prompt: Enable Firebase?
     default: false
 
+
