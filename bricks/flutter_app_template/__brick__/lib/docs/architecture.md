@@ -164,3 +164,4 @@ External Data (API/Database)
 5. **インターフェース分離の原則**: 必要なメソッドのみを定義
 
 
+

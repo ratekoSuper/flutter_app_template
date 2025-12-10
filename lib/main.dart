@@ -76,13 +76,12 @@ class _MyAppState extends ConsumerState<MyApp> {
         Locale('ru', ''),
         Locale('ko', ''),
       ],
-      theme: CupertinoThemeData(
+      theme: const CupertinoThemeData(
+        brightness: Brightness.light,
         primaryColor: AppColors.primary,
         scaffoldBackgroundColor: AppColors.backgroundLight,
         barBackgroundColor: AppColors.backgroundLight,
-        textTheme: const CupertinoTextThemeData(
-          primaryColor: AppColors.textPrimary,
-        ),
+        textTheme: CupertinoTextThemeData(primaryColor: AppColors.textPrimary),
       ),
       home: const SettingsPage(),
     );
