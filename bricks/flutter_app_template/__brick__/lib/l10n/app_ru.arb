@@ -5,8 +5,10 @@
   "privacyPolicy": "Политика Конфиденциальности",
   "termsOfService": "Условия Использования",
   "language": "Язык",
+{{#enable_subscription}}
   "subscription": "Подписка",
   "restorePurchases": "Восстановить Покупки",
+{{/enable_subscription}}
   "ok": "OK",
   "cancel": "Отмена",
   "maintenance": "На Обслуживании",
@@ -17,6 +19,7 @@
   "updateRecommendedMessage": "Доступна новая версия. Мы рекомендуем обновить для лучшего опыта.",
   "update": "Обновить"
 }
+
 
 
 

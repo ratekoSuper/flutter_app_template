@@ -1,3 +1,4 @@
+{{#enable_subscription}}
 import 'package:{{project_name}}/domain/entities/subscription_product.dart';
 
 abstract class SubscriptionRepository {
@@ -13,6 +14,4 @@ abstract class SubscriptionRepository {
 
   Stream<bool> get subscriptionStream;
 }
-
-
-
+{{/enable_subscription}}

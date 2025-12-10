@@ -38,6 +38,13 @@ vars:
     description: Firebaseを有効化しますか？（開発中はfalse推奨）
     prompt: Enable Firebase?
     default: false
+  
+  enable_subscription:
+    type: boolean
+    description: サブスクリプション機能を有効化しますか？
+    prompt: Enable subscription (in-app purchase) feature?
+    default: false
+
 
 
 

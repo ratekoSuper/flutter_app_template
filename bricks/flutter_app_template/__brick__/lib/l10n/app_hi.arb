@@ -5,8 +5,10 @@
   "privacyPolicy": "गोपनीयता नीति",
   "termsOfService": "सेवा की शर्तें",
   "language": "भाषा",
+{{#enable_subscription}}
   "subscription": "सदस्यता",
   "restorePurchases": "खरीदारी पुनर्स्थापित करें",
+{{/enable_subscription}}
   "ok": "ठीक है",
   "cancel": "रद्द करें",
   "maintenance": "रखरखाव के तहत",
@@ -17,6 +19,7 @@
   "updateRecommendedMessage": "एक नया संस्करण उपलब्ध है। हम सर्वोत्तम अनुभव के लिए अपडेट करने की सलाह देते हैं।",
   "update": "अपडेट करें"
 }
+
 
 
 

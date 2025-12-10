@@ -26,6 +26,7 @@ class SettingsPage extends StatelessWidget {
                 ),
               ],
             ),
+{{#enable_subscription}}
             CupertinoListSection.insetGrouped(
               children: [
                 CupertinoListTile(
@@ -40,6 +41,7 @@ class SettingsPage extends StatelessWidget {
                 ),
               ],
             ),
+{{/enable_subscription}}
             CupertinoListSection.insetGrouped(
               children: [
                 CupertinoListTile(

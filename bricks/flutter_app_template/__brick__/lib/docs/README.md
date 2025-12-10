@@ -14,7 +14,9 @@
 - [Firebase Remote Config](remote_config.md): Remote Config機能の仕様
 
 ### 機能
+{{#enable_subscription}}
 - [サブスクリプション](subscription.md): サブスクリプション機能の仕様
+{{/enable_subscription}}
 - [多言語対応](localization.md): 12言語対応の仕様
 
 ### デザイン
@@ -65,9 +67,11 @@ flutter gen-l10n
   - iOS: `ios/Runner/GoogleService-Info.plist`
   - Android: `android/app/google-services.json`
 
+{{#enable_subscription}}
 ### 4. In-App Purchase設定
 - App Store Connect / Google Play Consoleで商品を設定
 - `lib/data/repositories/subscription_repository_impl.dart`で商品IDを設定
+{{/enable_subscription}}
 
 ## 技術スタック
 
@@ -77,12 +81,16 @@ flutter gen-l10n
 - **アーキテクチャ**: オニオンアーキテクチャ
 - **デザインシステム**: Cupertino（iOS風）
 - **Firebase**: Analytics, App Check, Remote Config
+{{#enable_subscription}}
 - **課金**: In-App Purchase
+{{/enable_subscription}}
 - **多言語対応**: Flutter Localizations
 
 ## 共通機能
 
+{{#enable_subscription}}
 ✅ サブスクリプション機能
+{{/enable_subscription}}
 ✅ Firebase Analytics（画面閲覧、起動回数追跡）
 ✅ Firebase App Check
 ✅ Remote Config（バージョン管理、メンテナンスモード）
@@ -115,6 +123,7 @@ flutter gen-l10n
 
 ## ライセンス
 このテンプレートは自由に使用・改変できます。
+
 
 
 

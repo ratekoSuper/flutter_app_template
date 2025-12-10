@@ -1,3 +1,4 @@
+{{#enable_subscription}}
 class SubscriptionProduct {
   final String id;
   final String title;
@@ -13,6 +14,4 @@ class SubscriptionProduct {
     required this.currencyCode,
   });
 }
-
-
-
+{{/enable_subscription}}

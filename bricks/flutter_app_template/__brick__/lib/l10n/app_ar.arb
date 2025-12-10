@@ -5,8 +5,10 @@
   "privacyPolicy": "سياسة الخصوصية",
   "termsOfService": "شروط الخدمة",
   "language": "اللغة",
+{{#enable_subscription}}
   "subscription": "الاشتراك",
   "restorePurchases": "استعادة المشتريات",
+{{/enable_subscription}}
   "ok": "موافق",
   "cancel": "إلغاء",
   "maintenance": "قيد الصيانة",
@@ -17,6 +19,7 @@
   "updateRecommendedMessage": "يتوفر إصدار جديد. نوصي بالتحديث للحصول على أفضل تجربة.",
   "update": "تحديث"
 }
+
 
 
 

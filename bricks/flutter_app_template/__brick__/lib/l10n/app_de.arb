@@ -5,8 +5,10 @@
   "privacyPolicy": "Datenschutzrichtlinie",
   "termsOfService": "Nutzungsbedingungen",
   "language": "Sprache",
+{{#enable_subscription}}
   "subscription": "Abonnement",
   "restorePurchases": "Käufe Wiederherstellen",
+{{/enable_subscription}}
   "ok": "OK",
   "cancel": "Abbrechen",
   "maintenance": "Wartung",
@@ -17,6 +19,7 @@
   "updateRecommendedMessage": "Eine neue Version ist verfügbar. Wir empfehlen eine Aktualisierung für die beste Erfahrung.",
   "update": "Aktualisieren"
 }
+
 
 
 

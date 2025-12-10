@@ -1,3 +1,4 @@
+{{#enable_subscription}}
 import 'dart:async';
 import 'package:{{project_name}}/domain/entities/subscription_product.dart';
 import 'package:{{project_name}}/domain/repositories/subscription_repository.dart';
@@ -109,4 +110,4 @@ class SubscriptionRepositoryImpl implements SubscriptionRepository {
     _subscriptionController.close();
   }
 }
-
+{{/enable_subscription}}

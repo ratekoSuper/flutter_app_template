@@ -1,3 +1,4 @@
+{{#enable_subscription}}
 # サブスクリプション機能 仕様
 
 ## 概要
@@ -93,6 +94,4 @@ final Set<String> _productIds = {
 - テスト環境ではサンドボックスアカウントを使用してください
 - 商品IDは必ず実際のものに置き換えてください
 - 購入処理のエラーハンドリングを適切に実装してください
-
-
-
+{{/enable_subscription}}

@@ -5,8 +5,10 @@
   "privacyPolicy": "Kebijakan Privasi",
   "termsOfService": "Ketentuan Layanan",
   "language": "Bahasa",
+{{#enable_subscription}}
   "subscription": "Berlangganan",
   "restorePurchases": "Pulihkan Pembelian",
+{{/enable_subscription}}
   "ok": "OK",
   "cancel": "Batal",
   "maintenance": "Dalam Pemeliharaan",
@@ -17,6 +19,7 @@
   "updateRecommendedMessage": "Versi baru tersedia. Kami merekomendasikan pembaruan untuk pengalaman terbaik.",
   "update": "Perbarui"
 }
+
 
 
 

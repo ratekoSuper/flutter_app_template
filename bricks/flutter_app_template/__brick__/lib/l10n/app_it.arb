@@ -5,8 +5,10 @@
   "privacyPolicy": "Informativa sulla Privacy",
   "termsOfService": "Termini di Servizio",
   "language": "Lingua",
+{{#enable_subscription}}
   "subscription": "Abbonamento",
   "restorePurchases": "Ripristina Acquisti",
+{{/enable_subscription}}
   "ok": "OK",
   "cancel": "Annulla",
   "maintenance": "In Manutenzione",
@@ -17,6 +19,7 @@
   "updateRecommendedMessage": "È disponibile una nuova versione. Consigliamo di aggiornare per la migliore esperienza.",
   "update": "Aggiorna"
 }
+
 
 
 

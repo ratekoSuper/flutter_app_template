@@ -22,8 +22,10 @@ dependencies:
   firebase_app_check: ^0.3.2+1
   firebase_remote_config: ^5.1.5
 
+{{#enable_subscription}}
   # In-app purchases
   in_app_purchase: ^3.2.0
+{{/enable_subscription}}
 
   # Navigation
   go_router: ^14.6.2
@@ -52,6 +54,7 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   generate: true
+
 
 
 

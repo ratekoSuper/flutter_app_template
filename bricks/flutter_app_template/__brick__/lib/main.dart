@@ -47,9 +47,11 @@ class _MyAppState extends ConsumerState<MyApp> {
 
     final analyticsService = ref.read(firebaseAnalyticsServiceProvider);
     await analyticsService.logAppOpen();
+{{#enable_subscription}}
 
     final subscriptionRepository = ref.read(subscriptionRepositoryProvider);
     await subscriptionRepository.initialize();
+{{/enable_subscription}}
   }
 
   @override

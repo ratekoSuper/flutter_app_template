@@ -5,8 +5,10 @@
   "privacyPolicy": "개인정보 처리방침",
   "termsOfService": "서비스 약관",
   "language": "언어",
+{{#enable_subscription}}
   "subscription": "구독",
   "restorePurchases": "구매 복원",
+{{/enable_subscription}}
   "ok": "확인",
   "cancel": "취소",
   "maintenance": "점검 중",
@@ -17,6 +19,7 @@
   "updateRecommendedMessage": "새 버전을 사용할 수 있습니다. 최상의 경험을 위해 업데이트를 권장합니다.",
   "update": "업데이트"
 }
+
 
 
 

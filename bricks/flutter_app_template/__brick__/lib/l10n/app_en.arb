@@ -20,6 +20,7 @@
   "@language": {
     "description": "Language setting label"
   },
+{{#enable_subscription}}
   "subscription": "Subscription",
   "@subscription": {
     "description": "Subscription screen title"
@@ -28,6 +29,7 @@
   "@restorePurchases": {
     "description": "Restore purchases button label"
   },
+{{/enable_subscription}}
   "ok": "OK",
   "@ok": {
     "description": "OK button label"
@@ -65,6 +67,7 @@
     "description": "Update button label"
   }
 }
+
 
 
 
