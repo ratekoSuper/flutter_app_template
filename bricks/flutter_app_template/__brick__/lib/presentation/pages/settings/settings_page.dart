@@ -7,15 +7,26 @@ import 'package:{{project_name}}/l10n/app_localizations.dart';
 class SettingsPage extends StatelessWidget {
   const SettingsPage({super.key});
 
+  static const Color _settingsBackground = CupertinoColors.systemGroupedBackground;
+
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
 
-    return CupertinoPageScaffold(
-      navigationBar: CupertinoNavigationBar(middle: Text(l10n.settings)),
-      child: SafeArea(
-        child: ListView(
-          children: [
+    return CupertinoTheme(
+      data: CupertinoTheme.of(context).copyWith(
+        scaffoldBackgroundColor: _settingsBackground,
+        barBackgroundColor: _settingsBackground,
+      ),
+      child: CupertinoPageScaffold(
+        backgroundColor: _settingsBackground,
+        navigationBar: CupertinoNavigationBar(
+          backgroundColor: _settingsBackground,
+          middle: Text(l10n.settings),
+        ),
+        child: SafeArea(
+          child: ListView(
+            children: [
             CupertinoListSection.insetGrouped(
               header: Text(l10n.language),
               children: [
@@ -81,7 +92,8 @@ class SettingsPage extends StatelessWidget {
                 ),
               ),
             ),
-          ],
+            ],
+          ),
         ),
       ),
     );
